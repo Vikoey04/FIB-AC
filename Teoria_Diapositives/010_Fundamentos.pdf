@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<link href="https://sso.upc.edu/themes/upc/static/assets/css/colors.min.css" rel="stylesheet" type="text/css" media="screen"/><script type="text/javascript" src="https://sso.upc.edu/themes/upc/static/assets/js/i18n.min.js"></script>        
+<link href="https://sso.upc.edu/themes/upc/static/css/styles.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="https://sso.upc.edu/themes/upc/static/css/jquery-ui.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="https://sso.upc.edu/themes/upc/static/css/styles_ie.min.css" rel="stylesheet" type="text/css" />
+<!-- @PATCH UPCSSO001: Afegir bootstrap -->
+<link href="https://sso.upc.edu/themes/upc/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- @PATCH UPCSSO002 Afegir fonts awesome -->
+<link href="https://sso.upc.edu/themes/upc/static/css/fontawesome/css/all.min.css" rel="stylesheet" type="text/css" />
+<!-- @PATCH UPCSSO003: Afegir full d'estils UPC -->
+<link href="https://sso.upc.edu/themes/upc/static/css/upc_styles.css" rel="stylesheet" type="text/css" />
+<script nonce="6c4ba923dc9d2e734f70f32664336edb" type="text/javascript" src="https://sso.upc.edu/themes/upc/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://sso.upc.edu/themes/upc/static/js/jquery-ui.min.js"></script>
+
+    
+<script type="text/javascript" src="https://sso.upc.edu/themes/upc/static/js/common.min.js"></script>
+        <!-- @PATCH UPCSSO005: Afegir favicon icon -->
+        <link rel="icon" type="image/png" sizes="16x16" href="https://sso.upc.edu/themes/upc/static/img/favicon.png">
+        <title>Inicia la sessió</title>
+    </head>
+
+    <!-- 20210715 RFC 1172111: focus per introduir password si ens pasen email O365 -->
+    
+        <body>
+        <!-- 20210715 RFC 1172111: focus per introduir password si ens pasen email O365 - final -->
+        <section id="wrapper" class="login-register">
+            <div class="login-sidebar" id="no_scroll">
+                <div id="blue_bar">
+    <div id="langs"></div>
+</div>
+<div id="cream_bar">
+    <div id="org_logo">
+        <a href='http://www.upc.edu/' title='UPC'>
+            <img id="logo_img" src='https://sso.upc.edu/themes/upc/static/img/upc_logo_header.png' >
+        </a>
+    </div>
+</div>
+<div id="main">                <div id="content">
+                    <h1 id="texto_titulo">Identificació d'usuaris</h1>
+                    <h5 class="subtitle" id="texto_subtitulo">Autenticació UPC</h5>
+                    <div class='bloque'>
+                        <form nonce="6c4ba923dc9d2e734f70f32664336edb" action='https://sso.upc.edu/CAS/login?service=https%3A%2F%2Fraco.fib.upc.edu%2Favisos%2Fattachment%3Fassig%3DGRAU-AC%26idAvis%3D44660%26idAdjunt%3D96573' method='post' name="formulario1" id="formulario1">
+    <input type="hidden" name="adAS_mode" value="authn" />    <div id="userpass">
+        <div class="form-material">
+            <div class="form-group">
+                
+                <div class="col-12">
+		    <label id="label_user" for="edit-name">Usuari</label>
+                    <!-- 20210715 RFC 1172111: insertar email O365($nom_usuari) com a value de l'username -->
+                    <input class="form-control" type="text"  maxlength="60"
+                           name="adAS_username" id="edit-name" size="50" value="" tabindex="1" class="required" placeholder='Usuari'/>
+
+                </div>
+                            </div>
+
+            <div class="form-group">
+                                <div class="col-12">
+                    <label id="label_pass" for="edit-pass">Contrasenya</label>
+                    <input class="form-control"  type="password" name="adAS_password" id="edit-pass"  maxlength="128"  size="50"  tabindex="2" class="form-text required" value="" placeholder="Contrasenya"/>
+                </div>
+                            </div>
+
+                            <div class="remember_button_cl">
+                    <em id="fa-remember_button" class="fas fa-question-circle m-r-5" aria-hidden="true"> </em>
+                    <a id="remember_button" href="https://identitatdigital.upc.edu/gcredencials">
+                        Canvi i oblit de contrasenya                    </a>
+                </div>
+                
+            <div class="form-group">
+                <input id="submit_ok" class="gradient  btn btn-info btn-lg btn-block btn-rounded"
+                     type="submit" value="Entra" name="adAS_submit"/>&nbsp;
+            </div>
+                        
+        </div>
+    </div>
+</form>
+<div id="panelhttp" class="start_hidden">
+    <div class="start_hidden">
+        <form nonce="6c4ba923dc9d2e734f70f32664336edb" action='https://sso.upc.edu/CAS/login?service=https%3A%2F%2Fraco.fib.upc.edu%2Favisos%2Fattachment%3Fassig%3DGRAU-AC%26idAvis%3D44660%26idAdjunt%3D96573' method='post' name="AuthNForm" id="AuthNForm">
+            <input type="hidden" id="adAS_i18n_theme" name="adAS_i18n_theme" value="ca" />            <input type="submit"  class="gradient" value="Aceptar" name="adAS_submit"/>
+        </form>
+    </div>
+    <div id="externalauth">&nbsp;</div>
+    <p><a class="return_to_userpassword" href="">Tornar</a></p>
+</div>
+<div id="confirm_tls_dialog" class="start_hidden"
+     title="<span id='x509_tls_module_confirm_title'>Confirmació d'autenticació per certificat digital</span>">
+    <p id="x509_tls_module_confirm_msg">Per poder autenticar-se és necessari tenir configurat un certificat vàlid en el navegador o tenir introduïda correctament en el lector de certificats la targeta corresponent. Premi "Entra" per seguir.</p>
+</div>
+<div id ="auten_delegadas">
+    <h4 id="titulo_3col">Altres mètodes d'autenticació</h4>    <div id="otherlogin">
+        <div class="modules_grid">
+            <div class='module_cell'><a id="x509_module" nonce="6c4ba923dc9d2e734f70f32664336edb" class="own-button x509_module" href="https://sso.upc.edu/authn/tls/http-tls.php?adAS_request_id=e8911300-ac53-11ec-a6ce-7b2272657175" >  <div class="button-cont gradient button-layout"><div class="button-icon" nonce="6c4ba923dc9d2e734f70f32664336edb" style="background: url('https://sso.upc.edu/themes/upc/static/img/icon-x509_module.png') no-repeat top;">&nbsp;</div><div class="button-text button-text-i18n mod_name_x509_module" id="sml_x509_authn_label">sml_x509_authn_label</div></div> </a></div><div class='module_cell'><a id="saml2_module-UNIFICAT" nonce="6c4ba923dc9d2e734f70f32664336edb" class="own-button saml2_module" href="https://sso.upc.edu/SAML2/sml_sp_init.php?adAS_mode=authn&ADAS_SML_MODULE=UNIFICAT&ADAS_SML_MODULE_TYPE=saml2_module&returnurl=https%3A%2F%2Fsso.upc.edu%2FCAS%2Flogin%3FadAS_request_id%3De8911300-ac53-11ec-a6ce-7b2272657175" >  <div class="button-cont gradient button-layout"><div class="button-text button-text-i18n mod_name_saml2_module-UNIFICAT" id="No sóc d'aquesta organització">No sóc d'aquesta organització</div></div> </a></div>        </div>
+    </div>
+</div>
+
+                    </div>
+                    <!-- @PATCH UPCSSO007: Eliminar notes_texts -->
+                    <div class="notes_texts">
+                                                <p id="nota1">Una vegada t'hagis identificat, no caldrà que et tornis a identificar per a accedir a nous recursos.</p>
+                        <p><strong><span id ="nota2">Per a desconnectar-te, recomanem que tanquis el teu navegador (tancant totes les finestres).</span></strong></p>
+                    </div>
+                </div>
+
+                <!-- @PATCH UPCSSO004: Canviem la disposició del footer que estava aqui i la passem a sota el main-->
+                <script type="text/javascript" src="https://sso.upc.edu/themes/upc/static/js/index.min.js"></script>
+                <script type="text/javascript" nonce="6c4ba923dc9d2e734f70f32664336edb">
+                    $(document).ready(function () {
+                        path = "https://sso.upc.edu/";
+                        button_light = '#007BC0';
+                        var qr_authn = 0;
+                        if (qr_authn) {
+                            ms_interval = 1000;
+                            timeout = 1000;
+                            timeout_base = timeout;
+                        }
+                        declareJSBehaviour(qr_authn);
+                        declareVirtualKeyboard(0);
+                        declareX509Module();
+                        activate_translation();
+                        activate_translation_extra();
+                        if($('input[name="adAS_username"]').length){
+                            $('input[name="adAS_username"]').focus();
+                        }
+                    });
+                    function activate_translation_extra() {
+                        var texts = {"saml2_module-UNIFICAT":{"ca":"No s\u00f3c d'aquesta organitzaci\u00f3","es":"No soy de esta organizaci\u00f3n","en":"I'm not from this organization"}};
+                        aux_activate_translation_extra(texts);
+                    }
+                </script>
+            </div>
+            <!-- @PATCH UPCSSO004: Canviem la disposició del footer i el posem aqui sota-->
+            <!--div id="content_middle"></div-->
+<div id="content_bottom">
+    <div class="footer">
+    	<!-- a href="http://www.prise.es"><div id="copyright">adAS es un producto desarrollado por PRiSE</div></a-->
+        <p style="outline-style: none;">
+            <span style="outline-style: none;">© UPC </span>
+            Universitat Politècnica de Catalunya · BarcelonaTech
+        </p>
+        <nav>
+            <ul>
+                <li><a id="contact" href="https://serveistic.upc.edu/ca/atic/el-servei/contactar" target="_blank">Contacte</a></li>
+                <li><a id="accessibility" href="https://www.upc.edu/ca/avis-legal/accessibilitat" target="_blank">Accessibilitat</a></li>
+                <li><a id="disclaimer" href="https://www.upc.edu/ca/avis-legal" target="_blank">Avís legal</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!--div id="f_blue_bar"></div-->
+
+            <!--Custom JavaScript -->
+            <script type="text/javascript">
+                $(function() {
+                    $('#es').click(function(){
+                        $('#edit-name').attr('placeholder','Usuario');
+                        $('#edit-pass').attr('placeholder','Contraseña');
+                    })
+                    $('#ca').click(function(){
+                        $('#edit-name').attr('placeholder','Usuari');
+                        $('#edit-pass').attr('placeholder','Contrasenya');
+                    })
+                    $('#en').click(function(){
+                        $('#edit-name').attr('placeholder','User');
+                        $('#edit-pass').attr('placeholder','Password');
+                    })
+                })
+            </script>
+            <script type="text/javascript">
+                $(function() {
+                    $(".preloader").fadeOut()
+                })
+
+                /* random background */
+                let imatges = [ 'background-login0.jpg',
+                                'Biblioteca_ArquitecturaB.jpg',
+                                'Biblioteca_Castelldefels.jpg',
+                                'Biblioteca_Ferrate_1.jpg',
+                                'Biblioteca_Ferrate_2.jpg',
+                                'Biblioteca_Ferrate_3.jpg',
+                                'Biblioteca_Manresa.jpg',
+                                'Biblioteca_SantCugat.jpg',
+                                'Biblioteca_Terrassa.jpg',
+                                'Biblioteca_Vilanova.jpg',
+                                'Campus_Nord_ETSETB.jpg',
+                                'Campus_nord.jpg',
+                                'campus_sant_cugat.jpg',
+                                'Castelldefels_1.jpg',
+                                'Castelldefels_2.jpg',
+                                'Castelldefels_3.jpg',
+                                'EEBE_IMG_4830.jpg',
+                                'EEBE_IMG_4863.jpg',
+                                'EEBE_IMG_4955.jpg',
+                                'EPSEB.jpg',
+                                'ETSAB.jpg',
+                                'ETSECCPB_2.jpg',
+                                'ETSECCPB.jpg',
+                                'ETSEIAT_2.jpg',
+                                'ETSEIB.jpg',
+                                'ETSETB_1.jpg',
+                                'FACULTAT_NAUTICA.jpg',
+                                'FIB_IMG_0464.jpg',
+                                'FME.jpg',
+                                'FOOT.jpg',
+                                'Manresa_1.jpg',
+                                'Manresa_2.jpg',
+                                'Rectorat.jpg',
+                                'Sala_del_Llac.jpg',
+                                'Terrassa.jpg',
+                                'VILANOVA_interior.jpg']
+                let randomNum = Math.floor(Math.random() * imatges.length)
+                let base = 'https://sso.upc.edu/themes/upc/static/img/backgrounds'
+                $('body').prepend(`<style>@media (min-width: 768px) { #wrapper{background-image: url(${base}/${imatges[randomNum]})}}</style>`)
+                /* end random background */
+            </script>
+        </section>
+    </body>
+</html>
